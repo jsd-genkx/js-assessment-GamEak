@@ -136,6 +136,7 @@
 3. // step 3 สร้างเงื่อนไข ถ้าเดินตกขอบ Game Over
 4. // step 4 สร้างเงื่อนไข ถ้าเจอหมวก Win ถ้าตกหลุม Game Over
 5. // step 5 อัพเดทตำแหน่ง
+ุ6. // step 6 รันเกม
 
 _Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>
