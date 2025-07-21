@@ -29,32 +29,36 @@ class Field {
 		// Replace with your own code //
 		// console.log(this.field); // Please REMOVE this line before you start your code!
 
-		let action='L';
-		if(action==='L'){
-			// this.positionRow--
-			action.toUpperCase
-			this.field[this.positionRow--][this.positionCol] = pathCharacter;
-			pathCharacter.push()
-			console.log(pathCharacter)
-		}
-		else if(action==='R'){
-			// this.positionRow++
-			this.field[this.positionRow++][this.positionCol] = pathCharacter;
-			console.log(pathCharacter)
-		}
-		else if(action==='U'){
-			// this.positionCol--
-			this.field[this.positionRow][this.positionCol--] = pathCharacter;
-			console.log(pathCharacter)
-		}
-		else if(action==='D'){
-			// this.positionCol++
-			this.field[this.positionRow][this.positionCol++] = pathCharacter;
-			console.log(pathCharacter)
-		}
-		else{console.log('Press L, R, U or D to move.')}
+		// for(let row of this.field){console.log(row.join(" "));}
+		for(let i=0; i<this.field.length; i++){console.log(this.field[i].join(' '));}
+
 	}
+
 	// Your Code //
+
+	// action field
+	actionPlayer(){
+		let action=prompt("Which way? (U, D, L, R): ").toUpperCase();
+		if(action==="U"){this.positionRow--;}
+		else if(action==="D"){this.positionRow++;}
+		else if(action==="L"){this.positionCol--}
+		else if(action==="R"){this.positionCol++}
+		else{console.log("Use U, D, L, or R to move.");}
+
+		if(this.positionRow<0||
+			this.positionRow>=3 /*ใช้ตำแหน่ง index ของ array EX. 3 หรือ this.field.length ก็ได้*/ ||
+			this.positionCol<0||
+			this.positionCol>= this.field[0].length
+		){
+			console.log('Game Over \n "You fell of the map!"');
+		}
+
+		if(pathCharacter===hat){console.log('Win \n "You found your hat!"');}
+		else if(pathCharacter===hat){console.log('Game Over \n "You fell in a hole!"');}
+
+	}
+
+
 }
 
 // Game Mode ON

@@ -131,10 +131,10 @@
 
 ### Thinking Process
 
-1. // step 1
-2. // step 2
-3. // ...
-4. // step n
+1. // step 1 แสดงผลสิ่งที่อยู่ใน Array ก่อน
+2. // step 2 สร้างเงื่อนไขว่า ถ้ากดอะไรแล้วจะเดินไปทางไหน
+3. // step 3 สร้างเงื่อนไข ถ้าเดินตกขอบ Game Over
+4. // step 4 สร้างเงื่อนไข ถ้าเจอหมวก Win ถ้าตกหลุม Game Over
 
 _Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>
